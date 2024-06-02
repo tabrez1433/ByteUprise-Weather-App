@@ -10,10 +10,10 @@ Responsive design for seamless use on different devices
 Loading indicator while fetching weather data.
 
 III. Technologies Used
-React
-React Bootstrap
-Axios
-OpenWeatherMap API
+React,
+React Bootstrap,
+Axios,
+OpenWeatherMap API,
 Vite
 
 IV. Setup and Installation
