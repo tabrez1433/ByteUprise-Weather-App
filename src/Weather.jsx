@@ -10,8 +10,7 @@ const Weather = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${
-          import.meta.env.VITE_API_KEY
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${import.meta.env.VITE_API_KEY
         }`
       );
       setWeatherData(response.data);
@@ -60,14 +59,26 @@ const Weather = () => {
 
       {weatherData && (
         <div className="weather-info fw-bold">
-          <h2>{weatherData.name}</h2>
-          <p>
-            Temperature: {Math.round(Number(weatherData?.main?.temp - 273))}
-            &deg; c
-          </p>
-          <p>{weatherData.weather[0].description}</p>
-          <p>Humidity: {weatherData?.main?.humidity}%</p>
-          <p>Speed: {Math.round(weatherData?.wind?.speed * 1.60934)} km/h</p>
+          <h3>{weatherData.name}
+            <p>
+              Temperature: {Math.round(Number(weatherData?.main?.temp - 273.15))}
+              &deg; c
+            </p>
+            {/* In most cases both temp_min and temp_max parameters have the same volume as 'temp'. */}
+            {/* <div className="d-flex justify-content-center">
+              <p>
+                Max: {Math.round(Number(weatherData?.main?.temp_max - 273.15))}
+                &deg; c | &nbsp;
+              </p>
+              <p>
+                Min: {Math.round(Number(weatherData?.main?.temp_min - 273.15))}
+                &deg; c
+              </p>
+            </div> */}
+          </h3>
+            <h4 className="text-capitalize">{weatherData.weather[0].description}</h4>
+            <h4>Humidity: {weatherData?.main?.humidity}%</h4>
+            <h4>Wind: {Math.round(weatherData?.wind?.speed * 3.6)} km/h</h4>
 
         </div>
       )}
