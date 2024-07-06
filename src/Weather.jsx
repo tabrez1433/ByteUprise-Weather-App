@@ -64,17 +64,6 @@ const Weather = () => {
               Temperature: {Math.round(Number(weatherData?.main?.temp - 273.15))}
               &deg; c
             </p>
-            {/* In most cases both temp_min and temp_max parameters have the same volume as 'temp'. */}
-            {/* <div className="d-flex justify-content-center">
-              <p>
-                Max: {Math.round(Number(weatherData?.main?.temp_max - 273.15))}
-                &deg; c | &nbsp;
-              </p>
-              <p>
-                Min: {Math.round(Number(weatherData?.main?.temp_min - 273.15))}
-                &deg; c
-              </p>
-            </div> */}
           </h3>
             <h4 className="text-capitalize">{weatherData.weather[0].description}</h4>
             <h4>Humidity: {weatherData?.main?.humidity}%</h4>

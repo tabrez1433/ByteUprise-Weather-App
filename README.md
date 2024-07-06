@@ -13,6 +13,7 @@ Loading indicator while fetching weather data.
 
 # III. Technologies Used
 React   
+css
 React Bootstrap  
 Axios  
 OpenWeatherMap API  
