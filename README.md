@@ -1,15 +1,18 @@
 # I. Introduction
 
 The Weather App is a simple and intuitive application that provides current weather information for any city. Leveraging the OpenWeatherMap API, this app lets users get real-time weather updates, including temperature and weather conditions.  
-![Screenshot 1](https://github.com/tabrez1433/BYTEUPRISE_WD_04/assets/152283368/5a93175c-751a-427a-998e-7c00ea87f7ea)
+![weather-app](https://github.com/tabrez1433/ByteUprise-Weather-App/assets/152283368/23f58ccf-20f3-48ff-9a27-a4467358a95f)
+
+
 
 # II. Features
+![weather app](https://github.com/tabrez1433/ByteUprise-Weather-App/assets/152283368/9c3c0d84-bfb0-431f-b9f0-ac65f92da378)
 
 Search for current weather by city name
 Display weather conditions, temperature, and city name
 Responsive design for seamless use on different devices
 Loading indicator while fetching weather data.  
-![Screenshot 2](https://github.com/tabrez1433/BYTEUPRISE_WD_04/assets/152283368/86aeffd0-b7d3-422c-a5b9-f6d4fb468398)
+
 
 # III. Technologies Used
 React   
